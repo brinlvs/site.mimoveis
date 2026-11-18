@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="pt-BR" data-theme="light">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>MI. Móveis — Móveis de madeira feitos com carinho em família</title>
+  <meta name="description" content="MI. Móveis: empresa familiar de móveis de madeira, com peças coloridas e resistentes para a sua casa e para o quarto das crianças.">
+  <meta name="theme-color" content="#FFF8EF">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <!-- aplica tema/tamanho salvos antes de pintar a página (evita "piscar") -->
+  <script src="js/prefs-init.js"></script>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/main.js" defer></script>
+</head>
+<body>
+  <svg xmlns="http://www.w3.org/2000/svg" style="display:none" aria-hidden="true" focusable="false">
+  <symbol id="i-sun" viewBox="0 0 24 24"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/></symbol>
+  <symbol id="i-moon" viewBox="0 0 24 24"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></symbol>
+  <symbol id="i-access" viewBox="0 0 24 24"><circle cx="12" cy="4.5" r="2"/><path d="M5 8.5l7 1.5 7-1.5M12 10v5M9 21l3-6 3 6"/></symbol>
+  <symbol id="i-menu" viewBox="0 0 24 24"><path d="M4 6h16M4 12h16M4 18h16"/></symbol>
+  <symbol id="i-x" viewBox="0 0 24 24"><path d="M6 6l12 12M18 6L6 18"/></symbol>
+  <symbol id="i-left" viewBox="0 0 24 24"><path d="M15 5l-7 7 7 7"/></symbol>
+  <symbol id="i-right" viewBox="0 0 24 24"><path d="M9 5l7 7-7 7"/></symbol>
+  <symbol id="i-down" viewBox="0 0 24 24"><path d="M6 9l6 6 6-6"/></symbol>
+  <symbol id="i-up" viewBox="0 0 24 24"><path d="M12 19V5M5 12l7-7 7 7"/></symbol>
+  <symbol id="i-pause" viewBox="0 0 24 24"><path d="M8 5v14M16 5v14" stroke-width="3"/></symbol>
+  <symbol id="i-play" viewBox="0 0 24 24"><path d="M7 4.5l12 7.5-12 7.5z" fill="currentColor"/></symbol>
+  <symbol id="i-search" viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="M20 20l-4-4"/></symbol>
+  <symbol id="i-check" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M8 12.5l3 3 5-6"/></symbol>
+  <symbol id="i-alert" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v6M12 16.5v.5"/></symbol>
+  <symbol id="i-eye" viewBox="0 0 24 24"><path d="M2 12s4-7 10-7 10 7 10 7-4 7-10 7S2 12 2 12z"/><circle cx="12" cy="12" r="3"/></symbol>
+  <symbol id="i-eye-off" viewBox="0 0 24 24"><path d="M3 3l18 18M10.6 5.1A9.7 9.7 0 0 1 12 5c6 0 10 7 10 7a17 17 0 0 1-3.3 4M6.5 6.6A17 17 0 0 0 2 12s4 7 10 7a9.7 9.7 0 0 0 4-.9M9.9 9.9a3 3 0 0 0 4.2 4.2"/></symbol>
+  <symbol id="i-mail" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></symbol>
+  <symbol id="i-phone" viewBox="0 0 24 24"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2z"/></symbol>
+  <symbol id="i-pin" viewBox="0 0 24 24"><path d="M12 21s7-6.2 7-11a7 7 0 0 0-14 0c0 4.8 7 11 7 11z"/><circle cx="12" cy="10" r="2.5"/></symbol>
+  <symbol id="i-clock" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></symbol>
+  <symbol id="i-user" viewBox="0 0 24 24"><circle cx="12" cy="8" r="4"/><path d="M4 21a8 8 0 0 1 16 0"/></symbol>
+  <symbol id="i-heart" viewBox="0 0 24 24"><path d="M12 20s-8-5-8-11a4.5 4.5 0 0 1 8-2.8A4.5 4.5 0 0 1 20 9c0 6-8 11-8 11z"/></symbol>
+  <symbol id="i-tree" viewBox="0 0 24 24"><path d="M12 3l5 7h-3l4 6H6l4-6H7z"/><path d="M12 16v5"/></symbol>
+  <symbol id="i-star" viewBox="0 0 24 24"><path d="M12 3l2.7 5.8 6.3.7-4.7 4.3 1.3 6.2L12 17l-5.6 3 1.3-6.2L3 9.5l6.3-.7z"/></symbol>
+</svg>
+
+  <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html#inicio"><img src="assets/logo.png" alt="MI. Móveis — página inicial" width="200" height="141"></a>
+
+      <nav id="site-nav" class="nav" aria-label="Principal">
+        <a href="#sobre">Sobre nós</a>
+        <a href="#produtos">Produtos</a>
+        <a href="#galeria">Galeria</a>
+        <a href="#duvidas">Dúvidas</a>
+        <a href="#contato">Contato</a>
+      </nav>
+
+      <div class="header-actions">
+        <button type="button" class="icon-btn theme-toggle" data-action="toggle-theme" aria-label="Ativar modo escuro">
+          <svg class="icon icon-sun" aria-hidden="true"><use href="#i-sun"/></svg><svg class="icon icon-moon" aria-hidden="true"><use href="#i-moon"/></svg>
+        </button>
+        <button type="button" class="icon-btn" data-action="open-a11y" aria-haspopup="dialog" aria-label="Abrir painel de acessibilidade"><svg class="icon " aria-hidden="true"><use href="#i-access"/></svg></button>
+        <a class="login-link" id="login-link" href="login.html"><svg class="icon " aria-hidden="true"><use href="#i-user"/></svg><span>Entrar</span></a>
+        <button type="button" class="icon-btn nav-toggle" data-action="toggle-nav" aria-expanded="false" aria-controls="site-nav" aria-label="Abrir menu"><svg class="icon " aria-hidden="true"><use href="#i-menu"/></svg></button>
+      </div>
+    </div>
+  </header>
+
+  <main id="conteudo" tabindex="-1">
+
+    <!-- ============ HERO ============ -->
+    <section class="hero" id="inicio" aria-labelledby="hero-titulo">
+      <div class="container hero-grid">
+        <div>
+          <span class="eyebrow">Empresa familiar · Móveis de madeira</span>
+          <h1 id="hero-titulo">Móveis de <span class="c-pink">madeira</span> feitos com carinho para a <span class="c-blue">sua família</span></h1>
+          <p class="lead">A MI. Móveis é uma empresa familiar do ramo de móveis de madeira. Criamos peças resistentes, alegres e cheias de cor para deixar a casa — e o cantinho das crianças — com mais vida.</p>
+          <div class="hero-actions">
+            <a class="btn btn--primary" href="#produtos">Ver produtos</a>
+            <a class="btn btn--ghost" href="#contato">Falar com a gente</a>
+          </div>
+          <ul class="pill-list" aria-label="Nossos diferenciais">
+            <li><svg class="icon " aria-hidden="true"><use href="#i-heart"/></svg> Empresa familiar</li>
+            <li><svg class="icon " aria-hidden="true"><use href="#i-tree"/></svg> Feitos em madeira</li>
+            <li><svg class="icon " aria-hidden="true"><use href="#i-star"/></svg> Cores alegres</li>
+          </ul>
+        </div>
+        <div class="hero-art">
+          <span class="hero-chip hero-chip--a" aria-hidden="true"><svg class="icon " aria-hidden="true"><use href="#i-heart"/></svg> Feito em família</span>
+          <img src="assets/logo.png" alt="Logotipo da MI. Móveis: uma mesinha de madeira com duas cadeirinhas, uma rosa e uma azul" width="200" height="141">
+          <span class="hero-chip hero-chip--b" aria-hidden="true"><svg class="icon " aria-hidden="true"><use href="#i-tree"/></svg> Madeira de verdade</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ SOBRE ============ -->
+    <section class="section section--alt" id="sobre" aria-labelledby="sobre-titulo">
+      <div class="container">
+        <div class="about-grid">
+          <div class="about-card">
+            <div class="about-card__inner">
+              <img src="assets/logo.png" alt="" width="200" height="141">
+              <p class="about-card__quote">Cada móvel carrega um pouco da história de quem o faz e de quem o recebe.</p>
+              <p class="about-card__who">O jeito MI. Móveis de trabalhar</p>
+            </div>
+          </div>
+          <div>
+            <span class="eyebrow">Quem somos</span>
+            <h2 id="sobre-titulo">Uma empresa de família, feita de madeira e de carinho</h2>
+            <p>A MI. Móveis nasceu em família e continua assim: atendimento próximo, conversa franca e atenção a cada detalhe. Aqui, você fala diretamente com quem cuida do seu móvel.</p>
+            <p>Trabalhamos com madeira porque ela é bonita, resistente e pode ser consertada e renovada com o passar dos anos. Já as cores alegres vêm do desejo de deixar cada ambiente mais leve — principalmente os cantinhos das crianças.</p>
+          </div>
+        </div>
+
+        <div class="grid-3">
+          <article class="card value-card">
+            <div class="value-icon"><svg class="icon " aria-hidden="true"><use href="#i-heart"/></svg></div>
+            <h3>Feito em família</h3>
+            <p>Somos uma empresa familiar: cada cliente é recebido como parte da nossa história.</p>
+          </article>
+          <article class="card value-card">
+            <div class="value-icon"><svg class="icon " aria-hidden="true"><use href="#i-tree"/></svg></div>
+            <h3>Madeira em primeiro lugar</h3>
+            <p>Móveis pensados para durar, com materiais que envelhecem bem e podem ser renovados.</p>
+          </article>
+          <article class="card value-card">
+            <div class="value-icon"><svg class="icon " aria-hidden="true"><use href="#i-star"/></svg></div>
+            <h3>Cor e alegria</h3>
+            <p>Tons suaves e divertidos que dão personalidade ao ambiente sem pesar na decoração.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ PRODUTOS (busca + abas + cartões) ============ -->
+    <section class="section" id="produtos" aria-labelledby="produtos-titulo">
+      <div class="container" id="catalogo">
+        <div class="section-head">
+          <span class="eyebrow">Nossos móveis</span>
+          <h2 id="produtos-titulo">Móveis para cada cantinho da casa</h2>
+          <p>Pesquise pelo nome ou escolha uma categoria. Os modelos abaixo são exemplos: se preferir, criamos o seu sob medida.</p>
+        </div>
+
+        <div class="catalog-tools">
+          <div class="search">
+            <label for="busca">Buscar produto</label>
+            <svg class="icon " aria-hidden="true"><use href="#i-search"/></svg>
+            <input id="busca" type="search" placeholder="Ex.: cama, estante, mesa…" autocomplete="off">
+          </div>
+          <div class="tablist" role="tablist" aria-label="Categorias de produtos">
+            <button type="button" role="tab" class="tab" id="aba-todos" data-category="todos" aria-selected="true" aria-controls="catalogo-painel">Todos</button>
+            <button type="button" role="tab" class="tab" id="aba-infantil" data-category="infantil" aria-selected="false" aria-controls="catalogo-painel" tabindex="-1">Infantil</button>
+            <button type="button" role="tab" class="tab" id="aba-quarto" data-category="quarto" aria-selected="false" aria-controls="catalogo-painel" tabindex="-1">Quarto</button>
+            <button type="button" role="tab" class="tab" id="aba-sala" data-category="sala" aria-selected="false" aria-controls="catalogo-painel" tabindex="-1">Sala</button>
+            <button type="button" role="tab" class="tab" id="aba-jantar" data-category="jantar" aria-selected="false" aria-controls="catalogo-painel" tabindex="-1">Jantar</button>
+          </div>
+        </div>
+
+        <p class="results-status" id="resultados" role="status"></p>
+
+        <div id="catalogo-painel" role="tabpanel" aria-labelledby="aba-todos" tabindex="0">
+          <div class="product-grid">
+          <article class="product" data-category="infantil" data-busca="Mesinha de atividades Infantil mesa criança brincar desenho">
+            <div class="product__media"><img src="assets/img/produtos/mesinha-infantil.svg" alt="Ilustração de uma mesinha infantil rosa com blocos coloridos em cima" width="400" height="300" loading="lazy"></div>
+            <div class="product__body">
+              <span class="badge">Infantil</span>
+              <h3>Mesinha de atividades</h3>
+              <p>Para desenhar, brincar e fazer o lanchinho. Altura pensada para os pequenos.</p>
+              <a class="btn btn--primary btn--sm" href="#contato" data-produto="Mesinha de atividades" aria-label="Pedir orçamento: Mesinha de atividades">Pedir orçamento</a>
+            </div>
+          </article>
+
+          <article class="product" data-category="infantil" data-busca="Cadeirinha colorida Infantil cadeira criança assento">
+            <div class="product__media"><img src="assets/img/produtos/cadeirinha.svg" alt="Ilustração de uma cadeirinha azul de madeira" width="400" height="300" loading="lazy"></div>
+            <div class="product__body">
+              <span class="badge">Infantil</span>
+              <h3>Cadeirinha colorida</h3>
+              <p>Companheira da mesinha, com encosto arredondado e acabamento liso.</p>
+              <a class="btn btn--primary btn--sm" href="#contato" data-produto="Cadeirinha colorida" aria-label="Pedir orçamento: Cadeirinha colorida">Pedir orçamento</a>
+            </div>
+          </article>
+
+          <article class="product" data-category="infantil" data-busca="Estante colorida Infantil estante nicho livros brinquedos organizar">
+            <div class="product__media"><img src="assets/img/produtos/estante-colorida.svg" alt="Ilustração de uma estante de madeira com livros e brinquedos coloridos" width="400" height="300" loading="lazy"></div>
+            <div class="product__body">
+              <span class="badge">Infantil</span>
+              <h3>Estante colorida</h3>
+              <p>Nichos para livros e brinquedos sempre ao alcance das crianças.</p>
+              <a class="btn btn--primary btn--sm" href="#contato" data-produto="Estante colorida" aria-label="Pedir orçamento: Estante colorida">Pedir orçamento</a>
+            </div>
+          </article>
+
+          <article class="product" data-category="quarto" data-busca="Cama casinha Quarto cama montessori casinha dormir quarto">
+            <div class="product__media"><img src="assets/img/produtos/cama-casinha.svg" alt="Ilustração de uma cama de madeira em formato de casinha com cobertor azul" width="400" height="300" loading="lazy"></div>
+            <div class="product__body">
+              <span class="badge badge--yellow">Quarto</span>
+              <h3>Cama casinha</h3>
+              <p>Cama em formato de casinha, que deixa o quarto aconchegante e divertido.</p>
+              <a class="btn btn--primary btn--sm" href="#contato" data-produto="Cama casinha" aria-label="Pedir orçamento: Cama casinha">Pedir orçamento</a>
+            </div>
+          </article>
+
+          <article class="product" data-category="quarto" data-busca="Cômoda de gavetas Quarto comoda gavetas guardar roupas">
+            <div class="product__media"><img src="assets/img/produtos/comoda.svg" alt="Ilustração de uma cômoda de madeira com três gavetas rosa, azul e amarela" width="400" height="300" loading="lazy"></div>
+            <div class="product__body">
+              <span class="badge badge--yellow">Quarto</span>
+              <h3>Cômoda de gavetas</h3>
+              <p>Gavetas coloridas para organizar roupas e pequenos tesouros.</p>
+              <a class="btn btn--primary btn--sm" href="#contato" data-produto="Cômoda de gavetas" aria-label="Pedir orçamento: Cômoda de gavetas">Pedir orçamento</a>
+            </div>
+          </article>
+
+          <article class="product" data-category="sala" data-busca="Rack para TV Sala rack televisao tv sala nichos">
+            <div class="product__media"><img src="assets/img/produtos/rack-tv.svg" alt="Ilustração de um rack de madeira com portas coloridas e uma televisão em cima" width="400" height="300" loading="lazy"></div>
+            <div class="product__body">
+              <span class="badge badge--blue">Sala</span>
+              <h3>Rack para TV</h3>
+              <p>Espaço para a TV, livros e decoração, com portas e nichos.</p>
+              <a class="btn btn--primary btn--sm" href="#contato" data-produto="Rack para TV" aria-label="Pedir orçamento: Rack para TV">Pedir orçamento</a>
+            </div>
+          </article>
+
+          <article class="product" data-category="sala" data-busca="Mesa de centro Sala mesa centro redonda sala">
+            <div class="product__media"><img src="assets/img/produtos/mesa-de-centro.svg" alt="Ilustração de uma mesa de centro redonda de madeira com um vasinho de flores" width="400" height="300" loading="lazy"></div>
+            <div class="product__body">
+              <span class="badge badge--blue">Sala</span>
+              <h3>Mesa de centro</h3>
+              <p>Tampo redondo que combina com qualquer sala e aproxima as pessoas.</p>
+              <a class="btn btn--primary btn--sm" href="#contato" data-produto="Mesa de centro" aria-label="Pedir orçamento: Mesa de centro">Pedir orçamento</a>
+            </div>
+          </article>
+
+          <article class="product" data-category="jantar" data-busca="Mesa de jantar Jantar mesa jantar cadeiras familia refeicao">
+            <div class="product__media"><img src="assets/img/produtos/mesa-de-jantar.svg" alt="Ilustração de uma mesa de jantar de madeira com duas cadeiras, uma azul e uma rosa" width="400" height="300" loading="lazy"></div>
+            <div class="product__body">
+              <span class="badge badge--yellow">Jantar</span>
+              <h3>Mesa de jantar</h3>
+              <p>Para reunir a família inteira, do café da manhã ao almoço de domingo.</p>
+              <a class="btn btn--primary btn--sm" href="#contato" data-produto="Mesa de jantar" aria-label="Pedir orçamento: Mesa de jantar">Pedir orçamento</a>
+            </div>
+          </article>
+
+          <article class="product" data-category="jantar" data-busca="Banco com assento Jantar banco banqueta assento hall">
+            <div class="product__media"><img src="assets/img/produtos/banco.svg" alt="Ilustração de um banco de madeira com assento acolchoado azul" width="400" height="300" loading="lazy"></div>
+            <div class="product__body">
+              <span class="badge badge--yellow">Jantar</span>
+              <h3>Banco com assento</h3>
+              <p>Banco de madeira com assento acolchoado, ótimo para a mesa ou o hall.</p>
+              <a class="btn btn--primary btn--sm" href="#contato" data-produto="Banco com assento" aria-label="Pedir orçamento: Banco com assento">Pedir orçamento</a>
+            </div>
+          </article>
+          </div>
+          <div class="empty" id="vazio" hidden>
+            <h3>Nenhum produto encontrado</h3>
+            <p>Tente outra palavra ou volte a mostrar todas as categorias.</p>
+            <button type="button" class="btn btn--ghost" id="limpar-filtros">Limpar busca e filtros</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ GALERIA (carrossel) ============ -->
+    <section class="section section--alt" id="galeria" aria-labelledby="galeria-titulo">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow">Galeria</span>
+          <h2 id="galeria-titulo">Inspirações para a sua casa</h2>
+          <p>Veja como a madeira e as cores podem transformar cada ambiente. Imagens ilustrativas.</p>
+        </div>
+
+        <div class="carousel" id="carrossel" role="region" aria-roledescription="carrossel" aria-label="Inspirações de ambientes">
+          <div class="carousel__viewport">
+            <div class="carousel__track" id="carrossel-slides" aria-live="off">
+          <div class="carousel__slide" role="group" aria-roledescription="slide" aria-label="1 de 4">
+            <img src="assets/img/galeria/quarto.svg" alt="Quarto infantil rosa com uma cama em formato de casinha, uma estante pequena, uma janela e um tapete amarelo" width="1200" height="600">
+            <div class="carousel__caption"><h3>Quarto cheio de cor</h3><p>Camas, estantes e cantinhos pensados para as crianças.</p></div>
+          </div>
+
+          <div class="carousel__slide" role="group" aria-roledescription="slide" aria-label="2 de 4">
+            <img src="assets/img/galeria/sala.svg" alt="Sala azul com um rack de madeira, prateleiras na parede, uma mesa de centro redonda e uma planta grande" width="1200" height="600" loading="lazy">
+            <div class="carousel__caption"><h3>Sala acolhedora</h3><p>Racks, mesas de centro e prateleiras em madeira.</p></div>
+          </div>
+
+          <div class="carousel__slide" role="group" aria-roledescription="slide" aria-label="3 de 4">
+            <img src="assets/img/galeria/jantar.svg" alt="Sala de jantar amarela com uma mesa de madeira posta, duas cadeiras, um vaso de flores e uma luminária rosa" width="1200" height="600" loading="lazy">
+            <div class="carousel__caption"><h3>Mesa de domingo</h3><p>Mesas e cadeiras para reunir a família inteira.</p></div>
+          </div>
+
+          <div class="carousel__slide" role="group" aria-roledescription="slide" aria-label="4 de 4">
+            <img src="assets/img/galeria/oficina.svg" alt="Oficina de marcenaria com ferramentas penduradas na parede, latas de tinta coloridas, uma bancada e um banquinho rosa" width="1200" height="600" loading="lazy">
+            <div class="carousel__caption"><h3>Da madeira ao seu lar</h3><p>Cuidado em cada etapa, do corte ao acabamento.</p></div>
+          </div>
+            </div>
+          </div>
+          <div class="carousel__controls">
+            <button type="button" class="icon-btn" data-car="prev" aria-controls="carrossel-slides" aria-label="Slide anterior"><svg class="icon " aria-hidden="true"><use href="#i-left"/></svg></button>
+            <div class="dots" role="group" aria-label="Escolher slide"></div>
+            <button type="button" class="icon-btn" data-car="next" aria-controls="carrossel-slides" aria-label="Próximo slide"><svg class="icon " aria-hidden="true"><use href="#i-right"/></svg></button>
+            <button type="button" class="icon-btn" data-car="toggle" aria-label="Pausar a troca automática de imagens"><svg class="icon icon-pause" aria-hidden="true"><use href="#i-pause"/></svg><svg class="icon icon-play" aria-hidden="true"><use href="#i-play"/></svg></button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ DÚVIDAS (cartões explicativos) ============ -->
+    <section class="section" id="duvidas" aria-labelledby="duvidas-titulo">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow">Cantinho do conhecimento</span>
+          <h2 id="duvidas-titulo">Tire suas dúvidas</h2>
+          <p>Toque em um cartão para ler mais.</p>
+        </div>
+        <div class="explain-grid">
+          <article class="explain">
+            <h3><button type="button" class="explain__btn" id="ex1-btn" aria-expanded="false" aria-controls="ex1">Por que escolher móveis de madeira? <svg class="icon " aria-hidden="true"><use href="#i-down"/></svg></button></h3>
+            <div class="explain__panel" id="ex1" role="region" aria-labelledby="ex1-btn" hidden>
+              <p>A madeira é um material resistente e, com os cuidados certos, dura muitos anos. Ao contrário de peças descartáveis, um móvel de madeira pode ser lixado, pintado de novo e consertado — por isso acompanha a família por muito tempo.</p>
+              <p>Vale sempre perguntar a origem da madeira e preferir fornecedores com procedência legal ou certificação.</p>
+            </div>
+          </article>
+          <article class="explain">
+            <h3><button type="button" class="explain__btn" id="ex2-btn" aria-expanded="false" aria-controls="ex2">Como cuidar do seu móvel de madeira <svg class="icon " aria-hidden="true"><use href="#i-down"/></svg></button></h3>
+            <div class="explain__panel" id="ex2" role="region" aria-labelledby="ex2-btn" hidden>
+              <ul>
+                <li>Limpe com um pano macio levemente úmido e seque em seguida.</li>
+                <li>Evite produtos abrasivos e excesso de água.</li>
+                <li>Mantenha longe de sol direto por muito tempo e de fontes de calor.</li>
+                <li>Use apoios sob objetos quentes, molhados ou pesados.</li>
+              </ul>
+            </div>
+          </article>
+          <article class="explain">
+            <h3><button type="button" class="explain__btn" id="ex3-btn" aria-expanded="false" aria-controls="ex3">Como pedir um orçamento <svg class="icon " aria-hidden="true"><use href="#i-down"/></svg></button></h3>
+            <div class="explain__panel" id="ex3" role="region" aria-labelledby="ex3-btn" hidden>
+              <ol>
+                <li>Escolha um modelo ou conte a sua ideia.</li>
+                <li>Envie as medidas do espaço e as cores que você gosta.</li>
+                <li>Receba a proposta com prazo e valores.</li>
+                <li>Aprovou? Combinamos a produção e a entrega.</li>
+              </ol>
+              <p>Use o formulário da seção <a href="#contato">Contato</a>.</p>
+            </div>
+          </article>
+          <article class="explain">
+            <h3><button type="button" class="explain__btn" id="ex4-btn" aria-expanded="false" aria-controls="ex4">Móveis infantis: o que observar <svg class="icon " aria-hidden="true"><use href="#i-down"/></svg></button></h3>
+            <div class="explain__panel" id="ex4" role="region" aria-labelledby="ex4-btn" hidden>
+              <ul>
+                <li>Cantos arredondados e superfícies bem lixadas.</li>
+                <li>Estabilidade: o móvel não pode balançar nem tombar com facilidade.</li>
+                <li>Altura adequada ao tamanho e à idade da criança.</li>
+                <li>Informe-se sobre os acabamentos usados e siga a faixa etária indicada pelo fabricante.</li>
+              </ul>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ CONTATO (formulário) ============ -->
+    <section class="section section--alt" id="contato" aria-labelledby="contato-titulo">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow">Contato</span>
+          <h2 id="contato-titulo">Vamos conversar sobre o seu móvel?</h2>
+          <p>Preencha o formulário e responderemos o quanto antes. Campos com <span class="req" aria-hidden="true">*</span><span class="sr-only">asterisco</span> são obrigatórios.</p>
+        </div>
+
+        <div class="form-grid">
+          <div class="card">
+            <form id="form-contato" novalidate data-endpoint="" aria-labelledby="contato-titulo">
+              <div class="form-summary" role="alert" tabindex="-1" hidden></div>
+
+              <div class="form-row">
+                <div class="field">
+                  <label for="nome">Nome <span class="req" aria-hidden="true">*</span></label>
+                  <input id="nome" name="nome" type="text" autocomplete="name" required aria-required="true">
+                </div>
+                <div class="field">
+                  <label for="email">E-mail <span class="req" aria-hidden="true">*</span></label>
+                  <input id="email" name="email" type="email" autocomplete="email" inputmode="email" required aria-required="true">
+                </div>
+              </div>
+
+              <div class="form-row">
+                <div class="field">
+                  <label for="telefone">Telefone (opcional)</label>
+                  <input id="telefone" name="telefone" type="tel" autocomplete="tel" inputmode="tel" placeholder="(00) 00000-0000">
+                </div>
+                <div class="field">
+                  <label for="assunto">Assunto <span class="req" aria-hidden="true">*</span></label>
+                  <select id="assunto" name="assunto" required aria-required="true">
+                    <option value="">Selecione…</option>
+                    <option value="orcamento">Pedir orçamento</option>
+                    <option value="sob-medida">Móvel sob medida</option>
+                    <option value="duvida">Tirar uma dúvida</option>
+                    <option value="outro">Outro assunto</option>
+                  </select>
+                </div>
+              </div>
+
+              <div class="field">
+                <label for="mensagem">Mensagem <span class="req" aria-hidden="true">*</span></label>
+                <textarea id="mensagem" name="mensagem" rows="5" maxlength="600" required aria-required="true" aria-describedby="contador"></textarea>
+                <p class="counter" id="contador"></p>
+              </div>
+
+              <div class="field">
+                <div class="check">
+                  <input id="consentimento" name="consentimento" type="checkbox" required aria-required="true">
+                  <label for="consentimento">Concordo em compartilhar meus dados para que a MI. Móveis entre em contato comigo. <span class="req" aria-hidden="true">*</span></label>
+                </div>
+              </div>
+
+              <button type="submit" class="btn btn--primary btn--block">Enviar mensagem</button>
+            </form>
+
+            <div class="form-success" id="contato-sucesso" role="status" hidden>
+              <h3 tabindex="-1"><svg class="icon " aria-hidden="true"><use href="#i-check"/></svg> Mensagem enviada!</h3>
+              <p>Obrigado, <strong id="sucesso-nome"></strong>! Recebemos o seu contato e responderemos em breve.</p>
+              <p><small>Modo demonstração: nenhum dado foi enviado para um servidor.</small></p>
+              <button type="button" class="btn btn--ghost" id="novo-contato">Enviar outra mensagem</button>
+            </div>
+          </div>
+
+          <aside class="card" aria-label="Outras formas de contato">
+            <h3>Outras formas de falar com a gente</h3>
+            <ul class="info-list">
+              <li><svg class="icon " aria-hidden="true"><use href="#i-phone"/></svg><div><strong>Telefone / WhatsApp</strong>(00) 00000-0000</div></li>
+              <li><svg class="icon " aria-hidden="true"><use href="#i-mail"/></svg><div><strong>E-mail</strong>contato@seudominio.com.br</div></li>
+              <li><svg class="icon " aria-hidden="true"><use href="#i-pin"/></svg><div><strong>Endereço</strong>Rua Exemplo, 123 — Sua Cidade/UF</div></li>
+              <li><svg class="icon " aria-hidden="true"><use href="#i-clock"/></svg><div><strong>Horário</strong>Segunda a sexta, das 8h às 18h</div></li>
+            </ul>
+          </aside>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ============ RODAPÉ ============ -->
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <div class="footer-logo"><img src="assets/logo.png" alt="MI. Móveis" width="200" height="141"></div>
+        <p>Empresa familiar do ramo de móveis de madeira. Peças resistentes, alegres e feitas com carinho para a sua casa.</p>
+      </div>
+      <nav aria-label="Rodapé">
+        <h2>Navegação</h2>
+        <ul>
+          <li><a class="footer-link" href="#sobre">Sobre nós</a></li>
+          <li><a class="footer-link" href="#produtos">Produtos</a></li>
+          <li><a class="footer-link" href="#galeria">Galeria</a></li>
+          <li><a class="footer-link" href="#duvidas">Dúvidas</a></li>
+          <li><a class="footer-link" href="#contato">Contato</a></li>
+          <li><a class="footer-link" href="login.html">Entrar</a></li>
+        </ul>
+      </nav>
+      <div>
+        <h2>Fale conosco</h2>
+        <ul>
+          <li>(00) 00000-0000</li>
+          <li>contato@seudominio.com.br</li>
+          <li><button type="button" class="footer-btn" data-action="open-a11y">Opções de acessibilidade</button></li>
+        </ul>
+      </div>
+    </div>
+    <div class="container footer-bottom">
+      <span>© <span id="ano">2026</span> MI. Móveis. Todos os direitos reservados.</span>
+      <span>Projeto da disciplina Desenvolvimento de Interfaces.</span>
+    </div>
+  </footer>
+
+  <button type="button" class="icon-btn to-top" aria-label="Voltar ao topo"><svg class="icon " aria-hidden="true"><use href="#i-up"/></svg></button>
+</body>
+</html>
