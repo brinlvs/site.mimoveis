@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="pt-BR" data-theme="light">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Catálogo — MI. Móveis</title>
+  <meta name="description" content="Catálogo completo da MI. Móveis: mesinhas e cadeirinhas de madeira em várias cores e tamanhos. Escolha e peça seu orçamento.">
+  
+  <meta name="theme-color" content="#FFF8EF">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <script src="js/prefs-init.js"></script>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/app.css">
+  <script src="js/treinamento.js" defer></script>
+  <script src="js/dados.js" defer></script>
+  <script src="js/main.js" defer></script>
+  <script src="js/orcamento.js" defer></script>
+  <script src="js/catalogo.js" defer></script>
+  <script src="js/assistente.js" defer></script>
+</head>
+<body>
+  <svg xmlns="http://www.w3.org/2000/svg" style="display:none" aria-hidden="true" focusable="false">
+  <symbol id="i-sun" viewBox="0 0 24 24"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/></symbol>
+  <symbol id="i-moon" viewBox="0 0 24 24"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></symbol>
+  <symbol id="i-access" viewBox="0 0 24 24"><circle cx="12" cy="4.5" r="2"/><path d="M5 8.5l7 1.5 7-1.5M12 10v5M9 21l3-6 3 6"/></symbol>
+  <symbol id="i-menu" viewBox="0 0 24 24"><path d="M4 6h16M4 12h16M4 18h16"/></symbol>
+  <symbol id="i-x" viewBox="0 0 24 24"><path d="M6 6l12 12M18 6L6 18"/></symbol>
+  <symbol id="i-left" viewBox="0 0 24 24"><path d="M15 5l-7 7 7 7"/></symbol>
+  <symbol id="i-right" viewBox="0 0 24 24"><path d="M9 5l7 7-7 7"/></symbol>
+  <symbol id="i-down" viewBox="0 0 24 24"><path d="M6 9l6 6 6-6"/></symbol>
+  <symbol id="i-up" viewBox="0 0 24 24"><path d="M12 19V5M5 12l7-7 7 7"/></symbol>
+  <symbol id="i-pause" viewBox="0 0 24 24"><path d="M8 5v14M16 5v14" stroke-width="3"/></symbol>
+  <symbol id="i-play" viewBox="0 0 24 24"><path d="M7 4.5l12 7.5-12 7.5z" fill="currentColor"/></symbol>
+  <symbol id="i-search" viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="M20 20l-4-4"/></symbol>
+  <symbol id="i-check" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M8 12.5l3 3 5-6"/></symbol>
+  <symbol id="i-alert" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v6M12 16.5v.5"/></symbol>
+  <symbol id="i-eye" viewBox="0 0 24 24"><path d="M2 12s4-7 10-7 10 7 10 7-4 7-10 7S2 12 2 12z"/><circle cx="12" cy="12" r="3"/></symbol>
+  <symbol id="i-eye-off" viewBox="0 0 24 24"><path d="M3 3l18 18M10.6 5.1A9.7 9.7 0 0 1 12 5c6 0 10 7 10 7a17 17 0 0 1-3.3 4M6.5 6.6A17 17 0 0 0 2 12s4 7 10 7a9.7 9.7 0 0 0 4-.9M9.9 9.9a3 3 0 0 0 4.2 4.2"/></symbol>
+  <symbol id="i-mail" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></symbol>
+  <symbol id="i-phone" viewBox="0 0 24 24"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2z"/></symbol>
+  <symbol id="i-pin" viewBox="0 0 24 24"><path d="M12 21s7-6.2 7-11a7 7 0 0 0-14 0c0 4.8 7 11 7 11z"/><circle cx="12" cy="10" r="2.5"/></symbol>
+  <symbol id="i-clock" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></symbol>
+  <symbol id="i-user" viewBox="0 0 24 24"><circle cx="12" cy="8" r="4"/><path d="M4 21a8 8 0 0 1 16 0"/></symbol>
+  <symbol id="i-heart" viewBox="0 0 24 24"><path d="M12 20s-8-5-8-11a4.5 4.5 0 0 1 8-2.8A4.5 4.5 0 0 1 20 9c0 6-8 11-8 11z"/></symbol>
+  <symbol id="i-tree" viewBox="0 0 24 24"><path d="M12 3l5 7h-3l4 6H6l4-6H7z"/><path d="M12 16v5"/></symbol>
+  <symbol id="i-star" viewBox="0 0 24 24"><path d="M12 3l2.7 5.8 6.3.7-4.7 4.3 1.3 6.2L12 17l-5.6 3 1.3-6.2L3 9.5l6.3-.7z"/></symbol>
+
+  <symbol id="i-cart" viewBox="0 0 24 24"><path d="M6 6h15l-1.5 9H8z"/><path d="M6 6L5 3H2"/><circle cx="9" cy="20" r="1.5"/><circle cx="18" cy="20" r="1.5"/></symbol>
+  <symbol id="i-chat" viewBox="0 0 24 24"><path d="M21 12a8 8 0 0 1-11.5 7.2L4 20l1-4.5A8 8 0 1 1 21 12z"/></symbol>
+  <symbol id="i-send" viewBox="0 0 24 24"><path d="M22 2L11 13M22 2l-7 20-4-9-9-4z"/></symbol>
+  <symbol id="i-plus" viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></symbol>
+  <symbol id="i-minus" viewBox="0 0 24 24"><path d="M5 12h14"/></symbol>
+  <symbol id="i-trash" viewBox="0 0 24 24"><path d="M4 7h16M10 11v6M14 11v6M6 7l1 13h10l1-13M9 7V4h6v3"/></symbol>
+  <symbol id="i-print" viewBox="0 0 24 24"><path d="M7 9V3h10v6M7 17H4v-7h16v7h-3M7 14h10v7H7z"/></symbol>
+  <symbol id="i-sparkle" viewBox="0 0 24 24"><path d="M12 3l1.8 5.2L19 10l-5.2 1.8L12 17l-1.8-5.2L5 10l5.2-1.8z"/></symbol>
+  <symbol id="i-check2" viewBox="0 0 24 24"><path d="M5 12l5 5 9-10"/></symbol>
+</svg>
+
+  <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html"><img src="assets/logo.png" alt="MI. Móveis — página inicial" width="200" height="141"></a>
+
+      <nav id="site-nav" class="nav" aria-label="Principal">
+        <a href="index.html">Início</a>
+        <a href="catalogo.html" aria-current="page">Catálogo</a>
+        <a href="madeira.html">Madeira</a>
+        <a href="index.html#sobre">Sobre nós</a>
+        <a href="index.html#contato">Contato</a>
+        <a class="nav-login" href="login.html">Entrar</a>
+      </nav>
+
+      <div class="header-actions">
+        <button type="button" class="icon-btn theme-toggle" data-action="toggle-theme" aria-label="Ativar modo escuro"><svg class="icon icon-sun" aria-hidden="true"><use href="#i-sun"/></svg><svg class="icon icon-moon" aria-hidden="true"><use href="#i-moon"/></svg></button>
+        <button type="button" class="icon-btn" data-action="open-a11y" aria-haspopup="dialog" aria-label="Abrir painel de acessibilidade"><svg class="icon " aria-hidden="true"><use href="#i-access"/></svg></button>
+        <button type="button" class="icon-btn cart-btn" data-action="open-cart" aria-haspopup="dialog" aria-label="Abrir meu orçamento"><svg class="icon " aria-hidden="true"><use href="#i-cart"/></svg><span class="cart-count" hidden>0</span></button>
+        <a class="login-link" id="login-link" href="login.html"><svg class="icon " aria-hidden="true"><use href="#i-user"/></svg><span>Entrar</span></a>
+        <button type="button" class="icon-btn nav-toggle" data-action="toggle-nav" aria-expanded="false" aria-controls="site-nav" aria-label="Abrir menu"><svg class="icon " aria-hidden="true"><use href="#i-menu"/></svg></button>
+      </div>
+    </div>
+  </header>
+
+  <main id="conteudo" tabindex="-1">
+    <section class="page-hero">
+      <div class="container">
+        <p class="crumbs"><a href="index.html">Início</a> › Catálogo</p>
+        <h1>Catálogo MI. Móveis</h1>
+        <p>Todos os nossos modelos em um só lugar. Escolha o móvel, defina a <strong>cor</strong> (o <strong>tamanho</strong> já vem sugerido) e adicione ao seu orçamento.</p>
+        <p class="print-only">MI. Móveis · contato@seudominio.com.br · (00) 00000-0000 · Valores de exemplo, sujeitos a confirmação.</p>
+        <div class="hero-actions no-print">
+          <button type="button" class="btn btn--primary" data-action="open-assistente"><svg class="icon " aria-hidden="true"><use href="#i-chat"/></svg> Orçamento com a assistente</button>
+          <button type="button" class="btn btn--ghost" data-action="open-cart"><svg class="icon " aria-hidden="true"><use href="#i-cart"/></svg> Meu orçamento</button>
+          <button type="button" class="btn btn--ghost" id="cat-imprimir"><svg class="icon " aria-hidden="true"><use href="#i-print"/></svg> Imprimir / salvar em PDF</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="modelos" aria-labelledby="modelos-titulo" style="padding-top:20px">
+      <div class="container" id="catalogo-app" data-modo="catalogo">
+        <h2 id="modelos-titulo" class="sr-only">Modelos</h2>
+        <div class="filtros">
+          <div class="search">
+            <label for="cat-busca">Buscar móvel</label>
+            <svg class="icon " aria-hidden="true"><use href="#i-search"/></svg>
+            <input id="cat-busca" type="search" placeholder="Ex.: gaveta, rosa, 4 cadeiras…" autocomplete="off">
+          </div>
+          <div class="chips-f" role="group" aria-label="Filtrar por cor do modelo">
+            <button type="button" class="chip-f" data-familia-filtro="todos" aria-pressed="true">Todos</button>
+            <button type="button" class="chip-f" data-familia-filtro="amarelo" aria-pressed="false">Amarelo</button>
+            <button type="button" class="chip-f" data-familia-filtro="rosa" aria-pressed="false">Rosa</button>
+            <button type="button" class="chip-f" data-familia-filtro="branco" aria-pressed="false">Branco</button>
+            <button type="button" class="chip-f" data-familia-filtro="natural" aria-pressed="false">Madeira natural</button>
+          </div>
+        </div>
+        <p class="results-status" id="cat-status" role="status"></p>
+        <div class="fichas" id="fichas"></div>
+        <div class="vazio" id="cat-vazio" hidden>
+          <h3>Nenhum móvel encontrado</h3>
+          <p>Tente outra palavra ou volte a mostrar todos os modelos.</p>
+          <button type="button" class="btn btn--ghost" id="cat-limpar">Limpar busca e filtros</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--alt" id="cores" aria-labelledby="cores-titulo">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow">Paleta</span>
+          <h2 id="cores-titulo">Cores disponíveis</h2>
+          <p>Todos os modelos podem ser pintados em qualquer uma destas cores. Não achou a sua? Fazemos sob encomenda.</p>
+        </div>
+        <ul class="paleta" id="paleta"></ul>
+        <p class="paleta-msg" id="paleta-msg" role="status">Toque em uma cor para ela já vir marcada quando você personalizar um móvel.</p>
+      </div>
+    </section>
+
+    <section class="section no-print" aria-labelledby="como-titulo">
+      <div class="container">
+        <div class="section-head"><h2 id="como-titulo">Como pedir o orçamento</h2></div>
+        <div class="grid-3">
+          <article class="card value-card"><div class="value-icon"><svg class="icon " aria-hidden="true"><use href="#i-search"/></svg></div><h3>1. Escolha o móvel</h3><p>Veja os modelos e toque em “Escolher cor e tamanho”.</p></article>
+          <article class="card value-card"><div class="value-icon"><svg class="icon " aria-hidden="true"><use href="#i-star"/></svg></div><h3>2. Cor e tamanho</h3><p>Escolha a cor; o tamanho já entra sugerido e você ajusta se precisar.</p></article>
+          <article class="card value-card"><div class="value-icon"><svg class="icon " aria-hidden="true"><use href="#i-send"/></svg></div><h3>3. Envie</h3><p>Revise o orçamento e envie pelo WhatsApp. Ou peça ajuda à assistente.</p></article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <div class="footer-logo"><img src="assets/logo.png" alt="MI. Móveis" width="200" height="141"></div>
+        <p>Empresa familiar do ramo de móveis de madeira. Peças resistentes, alegres e feitas com carinho para a sua casa.</p>
+      </div>
+      <nav aria-label="Rodapé">
+        <h2>Navegação</h2>
+        <ul>
+          <li><a class="footer-link" href="index.html">Início</a></li>
+          <li><a class="footer-link" href="catalogo.html">Catálogo</a></li>
+          <li><a class="footer-link" href="madeira.html">Madeira</a></li>
+          <li><a class="footer-link" href="index.html#sobre">Sobre nós</a></li>
+          <li><a class="footer-link" href="index.html#contato">Contato</a></li>
+          <li><a class="footer-link" href="login.html">Entrar</a></li>
+        </ul>
+      </nav>
+      <div>
+        <h2>Fale conosco</h2>
+        <ul>
+          <li>(00) 00000-0000</li>
+          <li>contato@seudominio.com.br</li>
+          <li><button type="button" class="footer-btn" data-action="open-assistente">Orçamento com a assistente</button></li>
+          <li><button type="button" class="footer-btn" data-action="open-a11y">Opções de acessibilidade</button></li>
+        </ul>
+      </div>
+    </div>
+    <div class="container footer-bottom">
+      <span>© <span id="ano">2026</span> MI. Móveis. Todos os direitos reservados.</span>
+      <span>Projeto da disciplina Desenvolvimento de Interfaces.</span>
+    </div>
+  </footer>
+  <button type="button" class="icon-btn to-top" aria-label="Voltar ao topo"><svg class="icon " aria-hidden="true"><use href="#i-up"/></svg></button>
+
+</body>
+</html>
